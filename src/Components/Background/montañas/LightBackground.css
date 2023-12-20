@@ -1,0 +1,67 @@
+.lightheme-container{
+    width: 100%;
+    height: 100%;
+    min-height: 500px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  .lightheme-container{
+    background-color: #007ced;
+      background: linear-gradient(to bottom, #185186 1%,#97b9d6 100%);
+  }
+ 
+  .mountainimg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 25%;
+    z-index: 1;
+  }
+
+  #cloud-intro{
+    position: relative;
+    height: 100%;
+    background:
+    /*1 nube*/
+    url("../../assets/nube1.png") -125vw 15%,
+    /*3 nube*/
+    url("../../assets/nube2.png") -115vw 45%,
+    /*4 nube*/
+    url("../../assets/nube3.png") -110vw 25%,
+    /*2 nube*/
+    url("../../assets/nube4.png") -155vw 30%;
+    background-size: 69%, 90%, 40%, 98%;
+    background-repeat: no-repeat;
+      animation: wind 15s linear infinite;
+  }
+  @keyframes wind{
+    0% {
+      background-position: -145vw 15%, -85vw 45%, -75vw 25%, -185vw 30%;
+      z-index: 20!important;
+    }
+    100% {
+        background-position: 140vw 15%, 175vw 45%, 195vw 25%, 135vw 30%;
+        z-index: 20!important;
+      /*background-position: 105vw 100px, 110vw 100px, 120vw 100px;*/
+    }
+  
+  }
+
+@media screen and (min-width: 1000px) {
+  #cloud-intro{
+    position: relative;
+    height: 100%;
+    background:
+    url("../../assets/nube1.png") -125vw 10px,
+    url("../../assets/nube2.png") -115vw 150px,
+    url("../../assets/nube3.png") -110vw 100px,
+    url("../../assets/nube4.png") -155vw 10px;
+    background-size: 28%, 50%, 20%, 45%;
+    background-repeat: no-repeat;
+      animation: wind 20s linear infinite;
+  }
+}
+
