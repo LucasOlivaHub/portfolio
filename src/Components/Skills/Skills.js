@@ -1,12 +1,16 @@
 import React, { useContext, useEffect, useState } from 'react'
 import js from '../../assets/js.png'
+import ts from '../../assets/ts.png'
 import react from '../../assets/react.png'
+import redux from '../../assets/reactredux.png'
 import html from '../../assets/html.png'
 import css from '../../assets/css.png'
 import sass from '../../assets/sass.png'
 import git from '../../assets/git.png'
 import github from '../../assets/github.png'
 import bootstrap from '../../assets/bootstrap.png'
+import tailwind from '../../assets/tailwind.png'
+import materialui from '../../assets/materialui.png'
 import ingles from '../../assets/ingles.png'
 import photoshop from '../../assets/photoshop.png'
 
@@ -56,9 +60,26 @@ export const Skills = () => {
                 <div id="react-glow" className="skill-glow animation-react">
                   <div className='skill-shine shine-react'></div>
                   <img src={react} alt="react" id="react-img" loading="lazy"/>
-                  <h2>ReactJS</h2>
+                  <h2>React</h2>
                 </div>
               </div>
+
+              <div className="card-skill animation-fade" id="redux">
+                <div id="react-glow" className="skill-glow animation-redux">
+                  <div className='skill-shine shine-redux'></div>
+                  <img src={redux} alt="redux" id="redux-img" loading="lazy"/>
+                  <h2>Redux</h2>
+                </div>
+              </div>
+
+              <div className="card-skill animation-fade" id="typescript">
+                <div id="javascript-glow" className="skill-glow">
+                <div className='skill-shine shine-ts'></div>
+                  <img src={ts} alt="ts" id="ts-img" loading="lazy"/>
+                  <h2>TypeScript</h2>
+                </div>
+              </div>
+
               <div className="card-skill animation-fade" id="javascript">
                 <div id="javascript-glow" className="skill-glow">
                 <div className='skill-shine shine-js'></div>
@@ -97,6 +118,22 @@ export const Skills = () => {
                   <div className='skill-shine shine-bootstrap'></div>
                     <img src={bootstrap} alt="bootstrap" id="bootstrap-img" loading="lazy"/>
                     <h2>Bootstrap</h2>
+                  </div>
+              </div>
+
+              <div className="card-skill animation-fade" id="tailwind">
+                  <div id="bootstrap-glow" className="skill-glow">
+                  <div className='skill-shine shine-tailwind'></div>
+                    <img src={tailwind} alt="tailwind" id="tailwind-img" loading="lazy"/>
+                    <h2>Tailwind</h2>
+                  </div>
+              </div>
+
+              <div className="card-skill animation-fade" id="mui">
+                  <div id="bootstrap-glow" className="skill-glow">
+                  <div className='skill-shine shine-mui'></div>
+                    <img src={materialui} alt="mui" id="mui-img" loading="lazy"/>
+                    <h2>Material UI</h2>
                   </div>
               </div>
 

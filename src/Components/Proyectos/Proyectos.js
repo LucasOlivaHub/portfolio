@@ -112,7 +112,7 @@ export const Proyectos = () => {
         {showProjects &&
         
         <article className='todos-proyectos-container' transition-style="in:wipe:top">
-          <span className='todosproyectos-text' style={textColors}>{language === "ES" ? "Todos mis proyectos responsive" : "All responsive projects"}</span>
+          <span className='todosproyectos-text' style={textColors}>{language === "ES" ? "Todos mis proyectos responsive" : "All responsive projects"} ({proyectosArr.length})</span>
           <div className='proyectos-center-container'>
             {proyectosArr && proyectosArr.map(p => {
               return (

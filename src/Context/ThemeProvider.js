@@ -22,7 +22,7 @@ export const ThemeProvider = ({children}) => {
     }
 
     const subtitleColors = {
-      color: themeNight ? "#efefef6b" : "#161616de",
+      color: themeNight ? "#efefef98" : "#161616de",
       transition: "200ms"
     }
 

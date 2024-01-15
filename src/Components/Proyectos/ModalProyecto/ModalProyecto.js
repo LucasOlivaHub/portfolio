@@ -35,11 +35,11 @@ function ModalProyecto({nombre, desc, fulldesc, img, lenguajes, github, url}) {
         
         <Modal.Footer>
           <Button className='modal-btn' onClick={handleClose}>
-            Ver proyecto
+            <a href={url} target='_blank'>Ver proyecto</a>
           </Button>
           {github !== false ? (
             <Button className='modal-btn' onClick={handleClose} >
-              Github
+              <a href={github} target='_blank'>Github</a>
             </Button>
           ) :
             <Button className='modal-btn' onClick={handleClose} disabled>

@@ -13,10 +13,11 @@ export const Certificaciones = () => {
     <section id='certificaciones-container' transition-style="in:square:top-left">
         <h2 style={textColors}>{language === "ES" ? "Certificaciones" : "Certifications"}</h2>
         <div className='certificaciones-links' transition-style="in:circle:center">
-          <a href='#'>React JS Developer - EducacionIT (2023)  <img src={educacionit}/> </a>
-          <a href='#'>JavaScript Developer - EducacionIT (2023) <img src={educacionit}/> </a>
-          <a href='#'>Web Designer - EducacionIT (2022) <img src={educacionit}/> </a>
-          <a href='#'>{language === "ES" ? "Inglés" : "English"} C1 Advanced - EF SET Test <img src={efset}/> </a>
+          <a href="https://www.educacionit.com/perfil/lucas-hernan-oliva-825541/certificado/64893" target="_blank">React JS Developer - EducacionIT (2023)  <img src={educacionit}/> </a>
+          <a href="https://www.linkedin.com/in/lucas-oliva-38858320b/details/education/1635523276985/single-media-viewer/?profileId=ACoAADVMylgBK21smmLIvV1OCTDN65Rw_kiG_w4" 
+          target="_blank">JavaScript Developer - EducacionIT (2023) <img src={educacionit}/> </a>
+          <a href="https://www.linkedin.com/in/lucas-oliva-38858320b" target="_blank">Web Designer - EducacionIT (2022) <img src={educacionit}/> </a>
+          <a href="https://www.efset.org/cert/MScRBy" target="_blank">{language === "ES" ? "Inglés" : "English"} C1 Advanced - EF SET Test <img src={efset}/> </a>
         </div>
     </section>
   )

@@ -105,8 +105,8 @@ const useGetProjects = () => {
                     <img src={html}></img>
                   </div>
                 ),
-              url: "#",
-              github: "blabla"
+              url: "proyectos/FraenykStore",
+              github: "https://github.com/LucasOlivaHub/Fraenyk-Store"
         },
         {
           id: 2,
@@ -146,8 +146,8 @@ const useGetProjects = () => {
               <img src={html}></img>
             </div>
           ),
-          url: "#",
-          github: false
+          url: "proyectos/ListaDeTareas",
+          github: "https://github.com/LucasOlivaHub/To-Do-List"
       },
 
          {
@@ -185,7 +185,7 @@ const useGetProjects = () => {
                 <img src={html}></img>
               </div>
             ),
-            url: "#",
+            url: "proyectos/MemoryCard",
             github: false
         },
         {
@@ -213,8 +213,8 @@ const useGetProjects = () => {
                 <img src={html}></img>
               </div>
             ),
-            url: "#",
-            github: false
+            url: "proyectos/Calculadora",
+            github: "https://github.com/LucasOlivaHub/Calculadora"
         },
         {
             id: 5,
@@ -245,7 +245,7 @@ const useGetProjects = () => {
                 <img src={html}></img>
               </div>
             ),
-            url: "#",
+            url: "proyectos/TiendaAdimas",
             github: false
         },
         {
@@ -280,7 +280,7 @@ const useGetProjects = () => {
               <img src={html}></img>
             </div>
           ),
-          url: "#",
+          url: "proyectos/WeatherAPI",
           github: false
       },
       {
@@ -312,8 +312,8 @@ const useGetProjects = () => {
             <img src={html}></img>
           </div>
         ),
-        url: "#",
-        github: false
+        url: "proyectos/E-Commerce",
+        github: "https://github.com/LucasOlivaHub/E-Commerce-v1.0-"
     },
     {
       id: 8,
@@ -349,8 +349,8 @@ const useGetProjects = () => {
           <img src={html}></img>
         </div>
       ),
-      url: "#",
-      github: false
+      url: "proyectos/ColorFlipper",
+      github: "https://github.com/LucasOlivaHub/Flipper-de-Colores"
   },
   {
     id: 9,
@@ -380,8 +380,8 @@ const useGetProjects = () => {
         <img src={html}></img>
       </div>
     ),
-    url: "#",
-    github: false
+    url: "proyectos/ConsultoraHotelera",
+    github: "https://github.com/LucasOlivaHub/Desafio-Front-End----YT-iossonomauri"
 }
     ]
 

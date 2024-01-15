@@ -11,6 +11,7 @@ import { Contacto } from './Components/Contacto/Contacto';
 import { ThemeProvider } from './Context/ThemeProvider';
 import { ThemesContainer } from './Components/Background/ThemesContainer';
 import { Certificaciones } from './Components/Certificaciones/Certificaciones';
+import { Footer } from './Components/Footer/Footer';
 
 
 function App() {
@@ -19,7 +20,7 @@ function App() {
     <div className="App">
       <ThemeProvider>
 
-      <HashRouter> 
+      <BrowserRouter> 
       <ThemesContainer/>
         <Header/>
           <Routes>
@@ -30,10 +31,10 @@ function App() {
             <Route path='/certificaciones' element={<Certificaciones/>}/>
             <Route path='/contacto' element={<Contacto/>}/>
           </Routes>
-      </HashRouter>
-      
-    
+          
+      </BrowserRouter>
       </ThemeProvider>
+      
     </div>
   );
 }

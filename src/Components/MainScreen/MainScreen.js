@@ -7,7 +7,7 @@ import "transition-style";
 
 export const MainScreen = () => {
 
-  const {themeNight, themeLight, textColors, btnColors, language} = useContext(backgroundContext);
+  const {themeNight, themeLight, textColors, btnColors, language, subtitleColors} = useContext(backgroundContext);
   const textoAnimacionRef = useRef();
   const textoAnimado = document.getElementById("text-write-anim");
 
@@ -70,7 +70,7 @@ export const MainScreen = () => {
 
 
   return (
-  
+
     <section id='main-screen' transition-style="in:wipe:bottom-left">
       <div className='astronauta-element'></div>
           <article className='main-content-container' transition-style="in:square:center">
@@ -84,9 +84,9 @@ export const MainScreen = () => {
               <div className='main-links-container'>
                 <Link style={btnColors} className='main-sobremi-link' to={"/sobremi"}>{language === "ES" ? "Sobre mi" : "About me"}</Link>
                 <div className='redes-container'>
-                      <a href='#'><i className="bi bi-envelope-at"></i></a>
-                      <a href='#'><i className="bi bi-linkedin"></i></a>
-                      <a href='#'><i className="bi bi-github"></i></a>
+                      <a href='mailto:lucasolivah@gmail.com'><i className="bi bi-envelope-at"></i></a>
+                      <a href='https://www.linkedin.com/in/lucas-oliva-38858320b/' target="_blank" ><i className="bi bi-linkedin"></i></a>
+                      <a href="https://github.com/LucasOlivaHub" target="_blank"><i className="bi bi-github"></i></a>
                 </div>
               </div>
           </article>
