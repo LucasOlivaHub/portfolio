@@ -35,53 +35,7 @@ export const Proyectos = () => {
   function handleShowProjects() {
     setShowProjects(!showProjects)
   }
-
-  /*
-
-          <a href="proyectos/MemoryCard" className="card" target="_blank">
-            <img src={proyectmodel} alt="proyecto" className="card-image" loading="lazy"/>
-            <figcaption className="card-body">
-              <h3 className="card-title">
-                {language === "ES" ? "Juego MemoryCard" : "MemoryCard game"}
-              </h3>
-              <p className="card-desc">
-                {language === "ES" ? 
-                "Juego de memoria en donde debes encontrar la pareja de una carta dentro del tablero"
-                 :"Memory game where you have to find the matching card" }
-              </p>
-            </figcaption>
-          </a>
-
-
-          <a href="proyectos/FraenykStore" className="card" target="_blank">
-            <img src={proyectmodel} alt="proyecto" className="card-image" loading="lazy"/>
-            <figcaption className="card-body">
-              <h3 className="card-title">
-                Fraenyk Store
-              </h3>
-              <p className="card-desc">
-              {language === "ES" ? "Tienda con búsqueda avanzada, detalle de productos y carrito de compras"
-               : "Store with advanced search filter, product details and functional shopping cart"}
-              </p>
-            </figcaption>
-          </a>
-
-          <a href="proyectos/ListaDeTareas" className="card" target="_blank">
-            <img src={proyectmodel} alt="proyecto" className="card-image" loading="lazy"/>
-            <figcaption className="card-body">
-              <h3 className="card-title">
-              {language === "ES" ? "Lista de tareas" : "To-Do List"}
-              </h3>
-              <p className="card-desc">
-              {language === "ES" ? "Lista de tareas con filtros, páginas y selección de fondo" 
-              : "To-Do List with filters, pagination and background change"} 
-              </p>
-            </figcaption>
-          </a>
-
   
-  */
-
   return (
     <section id="proyectos-container" className="animation-fade" transition-style="in:wipe:right">
         <h2 className="proyectos-title" style={textColors}>
