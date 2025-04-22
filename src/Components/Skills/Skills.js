@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useContext, useEffect } from 'react'
 import js from '../../assets/js.png'
 import ts from '../../assets/ts.png'
 import react from '../../assets/react.png'

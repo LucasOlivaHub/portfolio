@@ -1,5 +1,4 @@
 import React, { useContext, useEffect, useState } from 'react'
-import proyectmodel from '../../assets/proyectosimg/proyectmodel.png'
 import "transition-style"
 import '../ContentLoaders/Transitions.css'
 import CarouselProyectos from './Carousel/CarouselProyectos'
@@ -47,7 +46,7 @@ export const Proyectos = () => {
 
         {proyectosArr && proyectosArr.map((p) => {
             return p.destacado === true && (
-              <a href={p.url} className="card" target="_blank" key={p.id}>
+              <a href={p.url} className="card" target="_blank" key={p.id} rel="noreferrer">
                 <img src={p.image} alt="proyecto" className="card-image" loading="lazy"/>
                 <figcaption className="card-body">
                   {p.nombre}
@@ -71,8 +70,8 @@ export const Proyectos = () => {
             {proyectosArr && proyectosArr.map(p => {
               return (
               <article className='proyecto' key={p.id}>
-                <a href={p.url}>
-                  <img className='proyecto-img' src={p.image} loading="lazy"/>
+                <a href={p.url} target='_blank' rel="noreferrer">
+                  <img className='proyecto-img' src={p.image} loading="lazy" alt='proyecto_portada'/>
                 </a>
               
                 <div className='proyecto-desc-container' >

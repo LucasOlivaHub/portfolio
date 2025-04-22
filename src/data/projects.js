@@ -1,22 +1,20 @@
 import React, { useContext } from "react"
 import { backgroundContext } from "../Context/BackgroundContext"
-import proyectmodel from "../assets/proyectosimg/proyectmodel.png"
-import proyectomemorycard from '../assets/proyectosimg/proyecto-1.png'
-import proyectocalculadora from '../assets/proyectosimg/proyecto-2.png'
-import proyectoecommerce from '../assets/proyectosimg/proyecto-3.png'
-import proyectocolorflipper from '../assets/proyectosimg/proyecto-4.png'
-import proyectoplantilla from '../assets/proyectosimg/proyecto-5.png'
-import proyectoadimas from '../assets/proyectosimg/proyecto-6.png'
-import proyectoweatherapi from '../assets/proyectosimg/proyecto-7.png'
-import proyectotodolist from '../assets/proyectosimg/proyecto-8.png'
-import proyectofraenyk from '../assets/proyectosimg/proyecto-9.png'
+import proyectomemorycard from '../assets/proyectosimg/proyecto-1.webp'
+import proyectocalculadora from '../assets/proyectosimg/proyecto-2.webp'
+import proyectoecommerce from '../assets/proyectosimg/proyecto-3.webp'
+import proyectocolorflipper from '../assets/proyectosimg/proyecto-4.webp'
+import proyectoplantilla from '../assets/proyectosimg/proyecto-5.webp'
+import proyectoadimas from '../assets/proyectosimg/proyecto-6.webp'
+import proyectoweatherapi from '../assets/proyectosimg/proyecto-7.webp'
+import proyectotodolist from '../assets/proyectosimg/proyecto-8.webp'
+import proyectofraenyk from '../assets/proyectosimg/proyecto-9.webp'
 
 import js from '../assets/js.png'
 import react from '../assets/react.png'
 import html from '../assets/html.png'
 import css from '../assets/css.png'
-import sass from '../assets/sass.png'
-import bootstrap from '../assets/bootstrap.png'
+
 
 
 const useGetProjects = () => {
@@ -99,10 +97,10 @@ const useGetProjects = () => {
               image: proyectofraenyk,
               lenguajes: (
                   <div className='proyectos-lenguajes-container'>
-                    <img src={react}></img>
-                    <img src={js}></img>
-                    <img src={css}></img>
-                    <img src={html}></img>
+                    <img src={react} alt="skill_icon"></img>
+                    <img src={js} alt="skill_icon"></img>
+                    <img src={css} alt="skill_icon"></img>
+                    <img src={html} alt="skill_icon"></img>
                   </div>
                 ),
               url: "proyectos/FraenykStore",
@@ -140,10 +138,10 @@ const useGetProjects = () => {
           image: proyectotodolist,
           lenguajes: (
             <div className='proyectos-lenguajes-container'>
-              <img src={react}></img>
-              <img src={js}></img>
-              <img src={css}></img>
-              <img src={html}></img>
+              <img src={react} alt="skill_icon"></img>
+              <img src={js} alt="skill_icon"></img>
+              <img src={css} alt="skill_icon"></img>
+              <img src={html} alt="skill_icon"></img>
             </div>
           ),
           url: "proyectos/ListaDeTareas",
@@ -180,9 +178,9 @@ const useGetProjects = () => {
             image: proyectomemorycard,
             lenguajes: (
               <div className='proyectos-lenguajes-container'>
-                <img src={js}></img>
-                <img src={css}></img>
-                <img src={html}></img>
+                <img src={js} alt="skill_icon"></img>
+                <img src={css} alt="skill_icon"></img>
+                <img src={html} alt="skill_icon"></img>
               </div>
             ),
             url: "proyectos/MemoryCard",
@@ -208,9 +206,9 @@ const useGetProjects = () => {
             image: proyectocalculadora,
             lenguajes: (
               <div className='proyectos-lenguajes-container'>
-                <img src={js}></img>
-                <img src={css}></img>
-                <img src={html}></img>
+                <img src={js} alt="skill_icon"></img>
+                <img src={css} alt="skill_icon"></img>
+                <img src={html} alt="skill_icon"></img>
               </div>
             ),
             url: "proyectos/Calculadora",
@@ -240,9 +238,9 @@ const useGetProjects = () => {
             image: proyectoadimas,
             lenguajes: (
               <div className='proyectos-lenguajes-container'>
-                <img src={js}></img>
-                <img src={css}></img>
-                <img src={html}></img>
+                <img src={js} alt="skill_icon"></img>
+                <img src={css} alt="skill_icon"></img>
+                <img src={html} alt="skill_icon"></img>
               </div>
             ),
             url: "proyectos/TiendaAdimas",
@@ -275,9 +273,9 @@ const useGetProjects = () => {
           image: proyectoweatherapi,
           lenguajes: (
             <div className='proyectos-lenguajes-container'>
-              <img src={js}></img>
-              <img src={css}></img>
-              <img src={html}></img>
+              <img src={js} alt="skill_icon"></img>
+              <img src={css} alt="skill_icon"></img>
+              <img src={html} alt="skill_icon"></img>
             </div>
           ),
           url: "proyectos/WeatherAPI",
@@ -307,9 +305,9 @@ const useGetProjects = () => {
         image: proyectoecommerce,
         lenguajes: (
           <div className='proyectos-lenguajes-container'>
-            <img src={js}></img>
-            <img src={css}></img>
-            <img src={html}></img>
+            <img src={js} alt="skill_icon"></img>
+            <img src={css} alt="skill_icon"></img>
+            <img src={html} alt="skill_icon"></img>
           </div>
         ),
         url: "proyectos/E-Commerce",
@@ -344,9 +342,9 @@ const useGetProjects = () => {
       image: proyectocolorflipper,
       lenguajes: (
         <div className='proyectos-lenguajes-container'>
-          <img src={js}></img>
-          <img src={css}></img>
-          <img src={html}></img>
+          <img src={js} alt="skill_icon"></img>
+          <img src={css} alt="skill_icon"></img>
+          <img src={html} alt="skill_icon"></img>
         </div>
       ),
       url: "proyectos/ColorFlipper",
@@ -376,8 +374,8 @@ const useGetProjects = () => {
     image: proyectoplantilla,
     lenguajes: (
       <div className='proyectos-lenguajes-container'>
-        <img src={css}></img>
-        <img src={html}></img>
+        <img src={css} alt="skill_icon"></img>
+        <img src={html} alt="skill_icon"></img>
       </div>
     ),
     url: "proyectos/ConsultoraHotelera",

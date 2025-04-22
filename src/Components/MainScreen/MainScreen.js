@@ -1,7 +1,8 @@
-import React, { useContext, useEffect, useRef, useState } from 'react'
+import React, { useContext, useEffect, useRef } from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from 'react-router-dom'
-import moonimg from '../../assets/moonimg-700x800.png'
-import sunimg from '../../assets/sunimg-700x800.png'
+import moonimg from '../../assets/moonimg-700x800.webp'
+import sunimg from '../../assets/sunimg-700x800.webp'
 import { backgroundContext } from '../../Context/BackgroundContext'
 import "transition-style";
 
@@ -51,6 +52,8 @@ export const MainScreen = () => {
     };
   }, [textoAnimado]);
 
+  
+
   function animateAstronautAppear() {
     const astronauta = document.querySelector(".astronauta-element");
     astronauta.classList.add("astronauta-anim-appear")
@@ -90,8 +93,22 @@ export const MainScreen = () => {
                 </div>
               </div>
           </article>
-          <article className='main-img-container' transition-style="in:circle:center">
-             {themeNight ? <img transition-style="in:circle:center" src={moonimg} loading="lazy"></img> : <img transition-style="in:circle:center" className='light-theme-img' src={sunimg} loading="lazy"></img>}
+          <article className='main-img-container'>
+             {themeNight ? <img 
+             transition-style="in:circle:center" 
+             src={moonimg} 
+             fetchpriority="high"
+             decoding="async"
+             loading="eager"
+             alt="moon_image"></img> : 
+             <img 
+             transition-style="in:circle:center" 
+             className='light-theme-img' 
+             src={sunimg} 
+             fetchpriority="high"
+             decoding="async"
+             loading="eager"
+             alt="sun_image"></img>}
           </article>
     </section>
   )

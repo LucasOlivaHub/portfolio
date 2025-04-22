@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import useGetProjects from '../../../data/projects'
-import proyectmodel from '../../../assets/proyectosimg/proyectmodel.png'
 
 function CarouselProyectos() {
   const [index, setIndex] = useState(0);
@@ -17,7 +16,7 @@ function CarouselProyectos() {
        {proyectosArr && proyectosArr.map((p) => {
             return p.destacado === true && (
               <Carousel.Item key={p.id}>
-              <a href={p.url} className="card" target="_blank">
+              <a href={p.url} className="card" target="_blank" rel="noreferrer">
                  <img src={p.image} alt="proyecto" className="card-image"/>
                   {p.nombre}
                </a>

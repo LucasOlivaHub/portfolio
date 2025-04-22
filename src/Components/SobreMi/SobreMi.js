@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useContext, useEffect } from 'react'
 import fotoPerfil from '../../assets/perfil.png'
 import star from '../../assets/star.png'
 import education from '../../assets/education.png'
@@ -110,9 +110,9 @@ export const SobreMi = () => {
               </p>
             } 
             <div className='experiencia-imgs'>
-              <img src={features}/>
-              <img src={responsive}/>
-              <img src={uxui}/>
+              <img src={features} alt='experiencia_iconos'/>
+              <img src={responsive} alt='experiencia_iconos'/>
+              <img src={uxui} alt='experiencia_iconos'/>
             </div>
         </div>
 

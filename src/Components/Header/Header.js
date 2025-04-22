@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import { backgroundContext } from '../../Context/BackgroundContext'
 import MenuNav from './MenuNav/MenuNav'
@@ -51,7 +51,7 @@ export const Header = () => {
 
           <div onClick={() => handleLanguage()} className='language-container'>
             <button >{language === "ES" ? "ES" : "EN"} </button>
-            <img className='lang-img' src={language === "ES" ? spanishflag : englishflag}/>
+            <img className='lang-img' src={language === "ES" ? spanishflag : englishflag} alt='idioma_bandera'/>
           </div>
         </div>
      
