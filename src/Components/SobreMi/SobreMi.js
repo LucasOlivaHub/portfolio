@@ -175,7 +175,7 @@ export const SobreMi = () => {
                el area Front-End. 
               <br/>
               <br/>
-               Gracias a ello, hoy en día cuento con un gran conocimiento en React y TypeScript, domino las bases del desarrollo web como lo son JavaScript, 
+               Gracias a ello, hoy en día cuento con un gran conocimiento en React, domino las bases del desarrollo web como lo son JavaScript, 
                CSS y HTML, sumé conocimiento en Bootstrap, SASS & LESS, en el Responsive Design 
                y el diseño UX/UI.
               </p>
@@ -185,7 +185,7 @@ export const SobreMi = () => {
               the Front-End area.
               <br/>
               <br/>
-              Thanks to that, I now have extensive knowledge in React and TypeScript. I master the fundamentals of web development, such as JavaScript, CSS, and HTML,
+              Thanks to that, I now have extensive knowledge in React. I master the fundamentals of web development, such as JavaScript, CSS, and HTML,
               and have gained expertise in Bootstrap, SASS & LESS, as well as Responsive Design and UX/UI design.
               </p>
             } 
