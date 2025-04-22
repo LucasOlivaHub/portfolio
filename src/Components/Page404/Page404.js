@@ -13,7 +13,7 @@ export const Page404 = () => {
                         {language === "ES" ? "¡Oops! Esa página no existe" : "Oops! That page doesn't exist." }
                     </h4>
                     <a className='bg-azul' style={textColors} href='/'>
-                        {language === "ES" ? "¡Oops! Esa página no existe" : "Click to return to the home page" }
+                        {language === "ES" ? "Click para volver a la home" : "Click to return to the home page" }
                     </a>
             </div>
 
