@@ -76,13 +76,13 @@ export const MainScreen = () => {
 
     <section id='main-screen' transition-style="in:wipe:bottom-left">
       <div className='astronauta-element'></div>
-          <article className='main-content-container' transition-style="in:square:center">
+          <article className='main-content-container'>
               <h1 onMouseEnter={animateAstronautAppear}
               style={textColors}>Lucas Oliva</h1>
               <h2 style={textColors} ref={textoAnimacionRef} id='text-write-anim'>Front-End Developer</h2>
               <br/>
               <div className='main-text-container' style={textColors}>
-                {language === "ES" ? <p transition-style="in:wipe:right" style={textColors}>¡Hola! Soy Lucas, desarrollador Front-End Junior</p> : <p style={textColors} transition-style="in:wipe:top">Hey! My name is Lucas, I'm a Junior Front-End Developer</p> }
+                {language === "ES" ? <p style={textColors}>¡Hola! Soy Lucas, desarrollador Front-End Junior</p> : <p style={textColors} transition-style="in:wipe:top">Hey! My name is Lucas, I'm a Junior Front-End Developer</p> }
               </div>
               <div className='main-links-container'>
                 <Link style={btnColors} className='main-sobremi-link' to={"/sobremi"}>{language === "ES" ? "Sobre mi" : "About me"}</Link>
@@ -94,22 +94,26 @@ export const MainScreen = () => {
               </div>
           </article>
           <article className='main-img-container'>
-             {themeNight ? <img 
-             transition-style="in:circle:center" 
-             src={moonimg} 
-             fetchpriority="high"
-             decoding="async"
-             loading="eager"
-             alt="moon_image"></img> : 
-             <img 
-             transition-style="in:circle:center" 
-             className='light-theme-img' 
-             src={sunimg} 
-             fetchpriority="high"
-             decoding="async"
-             loading="eager"
-             alt="sun_image"></img>}
-          </article>
+          {themeNight ? (
+            <img 
+              className='main-img fade-in' 
+              src={moonimg} 
+              fetchpriority="high"
+              decoding="async"
+              loading="eager"
+              alt="moon_image"
+            />
+          ) : (
+            <img 
+              className='main-img light-theme-img fade-in' 
+              src={sunimg} 
+              fetchpriority="high"
+              decoding="async"
+              loading="eager"
+              alt="sun_image"
+            />
+          )}
+        </article>
     </section>
   )
 }
