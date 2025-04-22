@@ -11,6 +11,7 @@ import { Certificaciones } from './Components/Certificaciones/Certificaciones';
 
 import { ThemeProvider } from './Context/ThemeProvider';
 import { ThemesContainer } from './Components/Background/ThemesContainer';
+import { Page404 } from './Components/Page404/Page404';
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
             <Route path='/mis-proyectos' element={<Proyectos/>}/>
             <Route path='/certificaciones' element={<Certificaciones/>}/>
             <Route path='/contacto' element={<Contacto/>}/>
+            <Route path='*' element={<Page404/>}/>
           </Routes>
           
       </BrowserRouter>

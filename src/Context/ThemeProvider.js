@@ -21,6 +21,12 @@ export const ThemeProvider = ({children}) => {
       transition: "200ms"
     }
 
+    const labelColors = {
+      color: themeNight ? "#eeeeee" : "#131313", //#131313
+      textShadow: themeNight ? "2px 2px 4px #030303" : "2px 2px 8px #efefef",
+      transition: "200ms"
+    }
+
     const subtitleColors = {
       color: themeNight ? "#efefef98" : "#161616de",
       transition: "200ms"
@@ -61,6 +67,7 @@ export const ThemeProvider = ({children}) => {
 
         textColors,
         subtitleColors,
+        labelColors,
         btnColors,
         colorWhiteBlack,
         cardSkills,

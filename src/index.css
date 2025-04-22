@@ -26,7 +26,29 @@ h2 {
   text-shadow: 2px 2px 4px #030303;
 }
 
+/* clases generales */
 
+.bg-azul {
+  background-color: #2a2385;
+
+}
+
+
+a.bg-azul, button.bg-azul {
+  transition: 200ms;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin: 10px 0;
+  color: #efefef;
+  text-decoration: none;
+}
+
+a.bg-azul:hover, button.bg-azul:hover {
+  background-color: #564bf1;
+}
+/*fin clases generales */
 /*contenedores secciones*/
 #main-screen, #sobremi-container,
 #certificaciones-container, #proyectos-container, 
@@ -136,7 +158,7 @@ header {
   right: 0;
   width: 100%;
   
-  z-index: 100;
+  z-index: 9999;
   color: white;
 }
 
@@ -460,12 +482,12 @@ header nav .theme-container .theme-btn i {
   border: 2px solid #e9e9e962;
   border-radius: 12px;
   width: 70%;
-
+  text-decoration: none;
   color: #efefef;
 }
 
 #main-screen .main-sobremi-link:hover {
-  background-color: #60d3e2;
+  background-color: #98f3ffa6;
   transition: 200ms;
 }
 
@@ -582,7 +604,7 @@ header nav .theme-container .theme-btn i {
   justify-content: space-between;
 }
 
-.sobremi-info-container img {
+.sobremi-info-container .sobremi-icon {
   width: 10%;
   margin-left: 10px;
   align-self: center;
@@ -617,6 +639,20 @@ header nav .theme-container .theme-btn i {
     width: 25%;
     margin-top: 25px;
   }
+
+.experiencia-lista li{
+  font-size: 14px;
+}
+
+.experiencia-lista a {
+  color: #42619c;
+  text-decoration: none;
+  transition: 400ms all;
+}
+
+.experiencia-lista a:hover {
+  color: #b8d1ff;
+}
 
   /* Educacion */
   .educacion-texto-container p{
@@ -1180,6 +1216,28 @@ header nav .theme-container .theme-btn i {
 
 /*fin contacto*/
 
+/* 404 */
+.pagina404-section {
+  height: 100vh;
+  width: 100%;
+  z-index: 100;
+  position: relative;
+}
+
+.pagina404-section h3 {
+  font-size: 32px;
+}
+
+.pagina404-section h4 {
+  font-size: 24px;
+}
+
+.pagina404-section .btn-home {
+  font-size: 16px;
+  border-radius: 32px;
+}
+
+/* fin 404 */
 
 /*footer*/
 
@@ -1222,12 +1280,9 @@ header nav .theme-container .theme-btn i {
   }
 
   /* sobre mi */
-  .sobremi-info-container img {
+  .sobremi-info-container .sobremi-icon {
     width: 8%;
     margin-left: 10px;
-  }
-  .experiencia-texto-container .experiencia-imgs img{
-    width: 20%;
   }
 
 }
@@ -1243,14 +1298,11 @@ header nav .theme-container .theme-btn i {
     flex-direction: column;
     padding-top: 20px; 
   } 
-    .sobremi-info-container img {
+    .sobremi-info-container .sobremi-icon {
       width: 7%;
       margin-left: 10px;
     }
 
-    .experiencia-texto-container .experiencia-imgs img{
-      width: 18%;
-    }
 
   /*skills */
   #skills-container .card-skill {
@@ -1277,14 +1329,11 @@ header nav .theme-container .theme-btn i {
 @media screen and (min-width: 550px) {
 
     /* sobre mi */
-    .sobremi-info-container img {
+    .sobremi-info-container .sobremi-icon {
       width: 6%;
       margin-left: 10px;
     }
 
-    .experiencia-texto-container .experiencia-imgs img{
-      width: 16%;
-    }
 
     /*proyectos*/
     .carousel {
@@ -1345,13 +1394,10 @@ header nav .theme-container .theme-btn i {
 
       /* sobre mi */
 
-      #sobremi-container .sobremi-img-container img {
+      #sobremi-container .sobremi-img-container .sobremi-icon {
         width: 42%;
       }
 
-      .experiencia-texto-container .experiencia-imgs img{
-        width: 14%;
-      }
 }
 
 @media screen and (min-width: 700px) {
@@ -1368,7 +1414,7 @@ header nav .theme-container .theme-btn i {
 
 
     /* sobre mi */
-    .experiencia-texto-container .experiencia-imgs img{
+    .experiencia-texto-container .experiencia-imgs .sobremi-icon{
       width: 12%;
     }
 
@@ -1382,7 +1428,7 @@ header nav .theme-container .theme-btn i {
 
       /* sobre mi */
 
-      #sobremi-container .sobremi-img-container img {
+      #sobremi-container .sobremi-img-container .sobremi-icon {
         width: 35%;
       }
 }
@@ -1390,13 +1436,9 @@ header nav .theme-container .theme-btn i {
 @media screen and (min-width: 800px) {
 
   /* sobre mi */
-  .sobremi-info-container img {
+  .sobremi-info-container .sobremi-icon {
     width: 5%;
     margin-left: 10px;
-  }
-
-  .experiencia-texto-container .experiencia-imgs img{
-    width: 10%;
   }
 
   /*proyectos*/
@@ -1418,8 +1460,6 @@ header nav .theme-container .theme-btn i {
 
   /*sobre mi*/
   #sobremi-container .sobremi-info-container {
-  /*  flex-direction: row;
-    justify-content: space-between;*/
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 25px;
@@ -1439,7 +1479,7 @@ header nav .theme-container .theme-btn i {
       width: 90%; 
     }
 
-    .experiencia-texto-container .experiencia-imgs img{
+    .experiencia-texto-container .experiencia-imgs .sobremi-icon{
       width: 14%;
     }
 }
@@ -1563,7 +1603,7 @@ header nav .theme-container .theme-btn i {
     width: fit-content;
   }
 
-  #sobremi-container .sobremi-img-container img {
+  #sobremi-container .sobremi-img-container .sobremi-icon {
     width: 50%;
     height: 50%;
   }
@@ -1820,21 +1860,11 @@ header nav .theme-container .theme-btn i {
   #skills-container .card-skill {
     width: 9%;
   }
-
-  /* sobre mi*/
-  .experiencia-texto-container .experiencia-imgs img{
-    width: 12%;
-  }
 }
 
 @media screen and (min-width: 1400px) {
   .todos-proyectos-container .proyecto .proyecto-img {
     height: 180px;
-  }
-
-  /* sobre mi */
-  .experiencia-texto-container .experiencia-imgs img{
-    width: 10%;
   }
 
 }
@@ -1864,9 +1894,6 @@ header nav .theme-container .theme-btn i {
     margin-left: 55px;
   }
 
-  .experiencia-texto-container .experiencia-imgs img{
-    width: 8%;
-  }
   /*skills*/
   #skills-container .card-skill {
     width: 8%;
@@ -1909,9 +1936,6 @@ header nav .theme-container .theme-btn i {
     margin-left: 155px;
   }
 
-  .experiencia-texto-container .experiencia-imgs img{
-    width: 8%;
-  }
 
   /*proyectos*/
 
@@ -1969,10 +1993,6 @@ header nav .theme-container .theme-btn i {
   }
   
   /* sobre mi */
-
-  .experiencia-texto-container .experiencia-imgs img{
-    width: 6%;
-  }
 }
 
 
