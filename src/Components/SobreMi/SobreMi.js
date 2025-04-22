@@ -85,11 +85,11 @@ export const SobreMi = () => {
                 </p>
                 
                 <div className='d-flex align-items-center justify-content-center justify-content-md-start py-2 flex-wrap gap-4 gap-md-3'>
-                  <img src={developer} alt='responsive_img' width={80}></img>
-                  <img src={princeofpersia} alt='responsive_img' width={80}></img>
-                  <img src={ageofempires} alt='responsive_img' width={80}></img>
-                  <img src={starwars} alt='responsive_img' width={80}></img>
-                  <img src={futbol} alt='responsive_img' width={80}></img>
+                  <img src={developer} alt='dev_img' width={80}></img>
+                  <img src={princeofpersia} alt='pop_img' width={80}></img>
+                  <img src={ageofempires} alt='ageofempires_img' width={80}></img>
+                  <img src={starwars} alt='starwars_img' width={80}></img>
+                  <img src={futbol} alt='futbol_img' width={80}></img>
                 </div>
               </>
               )
@@ -110,11 +110,11 @@ export const SobreMi = () => {
                 As well, I like space a lot, I'm a Star Wars fan and I love Football.
                 </p>
                 <div className='d-flex align-items-center justify-content-center justify-content-md-start py-2 flex-wrap gap-4 gap-md-3'>
-                  <img src={developer} alt='responsive_img' width={80}></img>
-                  <img src={princeofpersia} alt='responsive_img' width={80}></img>
-                  <img src={ageofempires} alt='responsive_img' width={80}></img>
-                  <img src={starwars} alt='responsive_img' width={80}></img>
-                  <img src={futbol} alt='responsive_img' width={80}></img>
+                  <img src={developer} alt='dev_img' width={80}></img>
+                  <img src={princeofpersia} alt='pop_img' width={80}></img>
+                  <img src={ageofempires} alt='ageofempires_img' width={80}></img>
+                  <img src={starwars} alt='starwars_img' width={80}></img>
+                  <img src={futbol} alt='futbol_img' width={80}></img>
                 </div>
               </>
             } 
