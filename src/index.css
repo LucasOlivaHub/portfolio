@@ -1463,6 +1463,11 @@ header nav .theme-container .theme-btn i {
     width: 100%; /* 60%  27/12/2023*/
   }
 
+
+  .presentacion-container{
+    width: 100%;
+    justify-content: space-between;
+  }
 }
 
 @media screen and (min-width: 1024px) {
