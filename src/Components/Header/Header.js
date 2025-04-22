@@ -31,7 +31,7 @@ export const Header = () => {
         <Link to={"/skills"} className='nav-link'  transition-style={language === "ES" ? "in:circle:center" : "in:wipe:top"}>
           Skills
         </Link>
-        <Link to={"/proyectos"} className='nav-link'  transition-style={language === "ES" ? "in:circle:center" : "in:wipe:top"}>
+        <Link to={"/mis-proyectos"} className='nav-link'  transition-style={language === "ES" ? "in:circle:center" : "in:wipe:top"}>
           {language === "ES" ? "Proyectos" : "Projects" }
         </Link>
         <Link to={"/certificaciones"} className='nav-link'  transition-style={language === "ES" ? "in:circle:center" : "in:wipe:top"}>

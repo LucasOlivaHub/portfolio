@@ -93,10 +93,6 @@ export const Proyectos = () => {
               </article>
               )
             })}
-            
-
-          
-
           </div>
         </article>
        }

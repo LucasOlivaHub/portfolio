@@ -26,7 +26,7 @@ function App() {
             <Route path='/' element={<MainScreen/>}/>
             <Route path='/sobremi' element={<SobreMi/>}/>
             <Route path='/skills' element={<Skills/>}/>
-            <Route path='/proyectos' element={<Proyectos/>}/>
+            <Route path='/mis-proyectos' element={<Proyectos/>}/>
             <Route path='/certificaciones' element={<Certificaciones/>}/>
             <Route path='/contacto' element={<Contacto/>}/>
           </Routes>

@@ -35,7 +35,7 @@ function MenuNav() {
                 <Link style={navLinksBorderColor} to={"/skills"} onClick={() => setShow(!show)} className='nav-link'>
                   Skills
                 </Link>
-                <Link style={navLinksBorderColor} to={"/proyectos"} onClick={() => setShow(!show)} className='nav-link'>
+                <Link style={navLinksBorderColor} to={"/mis-proyectos"} onClick={() => setShow(!show)} className='nav-link'>
                 {language === "ES" ? "Proyectos" : "Projects" }
                 </Link>
                 <Link style={navLinksBorderColor} to={"/certificaciones"} onClick={() => setShow(!show)} className='nav-link'>
