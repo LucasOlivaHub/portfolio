@@ -88,8 +88,8 @@ export const MainScreen = () => {
                 <Link style={btnColors} className='main-sobremi-link' to={"/sobremi"}>{language === "ES" ? "Sobre mi" : "About me"}</Link>
                 <div className='redes-container'>
                       <a href='mailto:lucasolivah@gmail.com'><i className="bi bi-envelope-at"></i></a>
-                      <a href='https://www.linkedin.com/in/lucas-oliva-38858320b/' target="_blank" ><i className="bi bi-linkedin"></i></a>
-                      <a href="https://github.com/LucasOlivaHub" target="_blank"><i className="bi bi-github"></i></a>
+                      <a href='https://www.linkedin.com/in/lucas-oliva-38858320b/' target="_blank"  rel="noreferrer noopener"><i className="bi bi-linkedin"></i></a>
+                      <a href="https://github.com/LucasOlivaHub" target="_blank" rel="noreferrer noopener"><i className="bi bi-github"></i></a>
                 </div>
               </div>
           </article>

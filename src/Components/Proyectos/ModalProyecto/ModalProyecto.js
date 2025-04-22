@@ -21,7 +21,7 @@ function ModalProyecto({nombre, desc, fulldesc, img, lenguajes, github, url}) {
           <i onClick={() => setShow(!show)} className="bi bi-x-lg modal-close"></i>
         </Modal.Header>
         <div className='modal-proyecto-content'>
-            <img src={img} />
+            <img src={img} alt='proyecto_portada'/>
             {nombre}
             {desc}
             {fulldesc}
@@ -35,11 +35,11 @@ function ModalProyecto({nombre, desc, fulldesc, img, lenguajes, github, url}) {
         
         <Modal.Footer>
           <Button className='modal-btn' onClick={handleClose}>
-            <a href={url} target='_blank'>Ver proyecto</a>
+            <a href={url} target='_blank' rel="noreferrer noopener">Ver proyecto</a>
           </Button>
           {github !== false ? (
             <Button className='modal-btn' onClick={handleClose} >
-              <a href={github} target='_blank'>Github</a>
+              <a href={github} target='_blank' rel="noreferrer noopener">Github</a>
             </Button>
           ) :
             <Button className='modal-btn' onClick={handleClose} disabled>
