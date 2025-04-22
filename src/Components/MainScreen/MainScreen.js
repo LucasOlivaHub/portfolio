@@ -38,7 +38,8 @@ export const MainScreen = () => {
 
   useEffect(() => {
     const textoAnimado = textoAnimacionRef.current;
-    textoAnimado && textoAnimado.classList.add('write-animation');
+    textoAnimado && window.addEventListener("load", textoAnimado.classList.add('write-animation'));
+
     const animarTexto = setInterval(() => {
       if (textoAnimado) {
         textoAnimado.classList.add('write-animation');
