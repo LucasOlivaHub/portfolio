@@ -47,7 +47,7 @@ export const Proyectos = () => {
         {proyectosArr && proyectosArr.map((p) => {
             return p.destacado === true && (
               <a href={p.url} className="card" target="_blank" key={p.id} rel="noreferrer">
-                <img src={p.image} alt="proyecto" className="card-image" loading="lazy"/>
+                <img src={p.image} alt="proyecto" className="card-image" fetchpriority="high"/>
                 <figcaption className="card-body">
                   {p.nombre}
                   {p.desc}

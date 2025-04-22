@@ -57,7 +57,7 @@ export const SobreMi = () => {
             </div>
 
             <div className="sobremi-img-container" transition-style="in:circle:center">
-              <img id='fotoperfil' src={fotoPerfil} alt="lucasoliva" loading="lazy"/>
+              <img id='fotoperfil' src={fotoPerfil} alt="lucasoliva" fetchpriority="high"/>
             </div>
       </article>
 
