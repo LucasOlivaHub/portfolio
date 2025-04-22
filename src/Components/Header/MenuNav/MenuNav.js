@@ -51,7 +51,7 @@ function MenuNav() {
                 setShow(!show)}} 
               className='language-container'>
               <button style={colorWhiteBlack}>{language === "ES" ? "ES" : "EN"} </button>
-              <img className='mobile-lang-img' src={language === "ES" ? spanishflag : englishflag}/>
+              <img className='mobile-lang-img' src={language === "ES" ? spanishflag : englishflag} alt='idioma_bandera'/>
             </div>
         </Offcanvas.Body>
       </Offcanvas>

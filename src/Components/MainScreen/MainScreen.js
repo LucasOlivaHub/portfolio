@@ -8,7 +8,7 @@ import "transition-style";
 
 export const MainScreen = () => {
 
-  const {themeNight, themeLight, textColors, btnColors, language, subtitleColors} = useContext(backgroundContext);
+  const {themeNight, textColors, btnColors, language} = useContext(backgroundContext);
   const textoAnimacionRef = useRef();
   const textoAnimado = document.getElementById("text-write-anim");
 
