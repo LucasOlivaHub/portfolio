@@ -8,8 +8,8 @@ export const LightBackground = () => {
     <div className='light-theme-container'>
         <div className='light-imgs-container'>
 
-            <img className='black1-img' loading="lazy" src={black1} alt='light-bg-img'/>
-            <img className='black2-img' loading="lazy" src={black2} alt='light-bg-img'/>
+            <img className='black1-img' fetchpriority="high" src={black1} alt='light-bg-img'/>
+            <img className='black2-img' fetchpriority="high" src={black2} alt='light-bg-img'/>
             
         </div>
         <ul className='squares'>
