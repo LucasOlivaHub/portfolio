@@ -10,10 +10,9 @@ export const MainScreen = () => {
 
   const {themeNight, textColors, btnColors, language} = useContext(backgroundContext);
   const textoAnimacionRef = useRef();
-  const textoAnimado = document.getElementById("text-write-anim");
 
   useEffect(() => {
-    const textoAnimado = document.getElementById("text-write-anim");
+    const textoAnimado = textoAnimacionRef.current;
     //Funcion para eliminar la clase
     const handleAnimationEnd = () => {
       // Eliminar la clase al final de la animación
@@ -35,10 +34,10 @@ export const MainScreen = () => {
         textoAnimado.removeEventListener('animationend', handleAnimationEnd);
       }
     };
-  }, [textoAnimado]); 
+  }, [textoAnimacionRef]); 
 
   useEffect(() => {
-    const textoAnimado = document.getElementById("text-write-anim");
+    const textoAnimado = textoAnimacionRef.current;
     textoAnimado && textoAnimado.classList.add('write-animation');
     const animarTexto = setInterval(() => {
       if (textoAnimado) {
@@ -50,7 +49,7 @@ export const MainScreen = () => {
       // Limpiar el intervalo cuando el componente se desmonta
       clearInterval(animarTexto);
     };
-  }, [textoAnimado]);
+  }, [textoAnimacionRef]);
 
   
 
@@ -79,7 +78,7 @@ export const MainScreen = () => {
           <article className='main-content-container'>
               <h1 onMouseEnter={animateAstronautAppear}
               style={textColors}>Lucas Oliva</h1>
-              <h2 style={textColors} ref={textoAnimacionRef} id='text-write-anim'>Front-End Developer</h2>
+              <h3 style={textColors} ref={textoAnimacionRef} id='text-write-anim'>Front-End Developer</h3>
               <br/>
               <div className='main-text-container' style={textColors}>
                 {language === "ES" ? <p style={textColors}>¡Hola! Soy Lucas, desarrollador Front-End Junior</p> : <p style={textColors} transition-style="in:wipe:top">Hey! My name is Lucas, I'm a Junior Front-End Developer</p> }
