@@ -613,6 +613,7 @@ header nav .theme-container .theme-btn i {
 .sobremi-info-container ul {
   margin-left: 0;
   padding-left: 0 !important;
+  list-style-type: none;
 }
 
 .experiencia-texto-container h2, .educacion-texto-container h2,

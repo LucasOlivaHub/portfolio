@@ -146,21 +146,21 @@ export const SobreMi = () => {
 
             {language === "ES" ? 
              <ul className="sobremi-text text-theme experiencia-lista d-flex flex-column gap-2" transition-style="in:wipe:top">
-                <li style={subtitleColors}>Desarrollo Front del sitio actual de <a href='https://www.centralpuerto.com/' target='_blank' rel='noopener noreferrer'>Central Puerto</a> utilizando Wordpress, PHP, JavaScript, Bootstrap y HTML & CSS.</li>
-                <li style={subtitleColors}>Participación en múltiples proyectos e interacción directa con clientes como AstraZeneca, Central Puerto, CloudHesive y Grupo Lucci.</li>
-                <li style={subtitleColors}>Maquetado de páginas web a partir de diseños en Adobe XD.</li>
-                <li style={subtitleColors}>Funcionalidades interactivas: filtros dinámicos de datos provenientes de un Backend utilizando JavaScript y PHP, calculadoras, líneas de tiempo y carruseles.</li>
-                <li style={subtitleColors}>Desarrollo y mantenimiento de contenido autoadministrable para sitios Wordpress a través de campos personalizados (ACF) y posteos (Custom Post Type).</li>
-                <li style={subtitleColors}>Tecnologías utilizadas: Wordpress & PHP, Adobe Experience Manager, React, JavaScript, Swiper.js, Bootstrap, CSS, HTML, Git, GitHub.</li>
+                <li style={subtitleColors}><b className='me-1'>•</b> Desarrollo Front del sitio actual de <a href='https://www.centralpuerto.com/' target='_blank' rel='noopener noreferrer'>Central Puerto</a> utilizando Wordpress, PHP, JavaScript, Bootstrap y HTML & CSS.</li>
+                <li style={subtitleColors}><b className='me-1'>•</b> Participación en múltiples proyectos e interacción directa con clientes como AstraZeneca, Central Puerto, CloudHesive y Grupo Lucci.</li>
+                <li style={subtitleColors}><b className='me-1'>•</b> Maquetado de páginas web a partir de diseños en Adobe XD.</li>
+                <li style={subtitleColors}><b className='me-1'>•</b> Funcionalidades interactivas: filtros dinámicos de datos provenientes de un Backend utilizando JavaScript y PHP, calculadoras, líneas de tiempo y carruseles.</li>
+                <li style={subtitleColors}><b className='me-1'>•</b> Desarrollo y mantenimiento de contenido autoadministrable para sitios Wordpress a través de campos personalizados (ACF) y posteos (Custom Post Type).</li>
+                <li style={subtitleColors}><b className='me-1'>•</b> Tecnologías utilizadas: Wordpress & PHP, Adobe Experience Manager, React, JavaScript, Swiper.js, Bootstrap, CSS, HTML, Git, GitHub.</li>
               </ul>
                 :
               <ul className="sobremi-text text-theme experiencia-lista d-flex flex-column gap-2" transition-style="in:wipe:right">
-                <li style={subtitleColors}>Front-end development for <a style={subtitleColors} className='text-theme sobremi-text' href='https://www.centralpuerto.com/en/' target='_blank' rel='noopener noreferrer'>Central Puerto</a>’s current website using WordPress, PHP, JavaScript, Bootstrap, and HTML & CSS.</li>
-                <li style={subtitleColors}>Participation in multiple projects, directly interacting with clients such as AstraZeneca, Central Puerto, CloudHesive, and Grupo Lucci.</li>
-                <li style={subtitleColors}>Web page layout based on Adobe XD designs.</li>
-                <li style={subtitleColors}>Interactive functionalities: dynamic data filters fetching from a backend using JavaScript and PHP, calculators, timelines and carousels.</li>
-                <li style={subtitleColors}>Development and maintenance of self-managed content for WordPress websites through custom fields (ACF) and posts (Custom Post Type).</li>
-                <li style={subtitleColors}>Technologies used: WordPress & PHP, Adobe Experience Manager, React, JavaScript, Swiper.js, Bootstrap, CSS, HTML, Git, GitHub.</li>
+                <li style={subtitleColors}><b className='me-1'>•</b> Front-end development for <a href='https://www.centralpuerto.com/en/' target='_blank' rel='noopener noreferrer'>Central Puerto</a>’s current website using WordPress, PHP, JavaScript, Bootstrap, and HTML & CSS.</li>
+                <li style={subtitleColors}><b className='me-1'>•</b> Participation in multiple projects, directly interacting with clients such as AstraZeneca, Central Puerto, CloudHesive, and Grupo Lucci.</li>
+                <li style={subtitleColors}><b className='me-1'>•</b> Web page layout based on Adobe XD designs.</li>
+                <li style={subtitleColors}><b className='me-1'>•</b> Interactive functionalities: dynamic data filters fetching from a backend using JavaScript and PHP, calculators, timelines and carousels.</li>
+                <li style={subtitleColors}><b className='me-1'>•</b> Development and maintenance of self-managed content for WordPress websites through custom fields (ACF) and posts (Custom Post Type).</li>
+                <li style={subtitleColors}><b className='me-1'>•</b> Technologies used: WordPress & PHP, Adobe Experience Manager, React, JavaScript, Swiper.js, Bootstrap, CSS, HTML, Git, GitHub.</li>
               </ul>
               
             } 
