@@ -1,9 +1,8 @@
 import React, { useContext } from 'react'
 import { backgroundContext } from '../../Context/BackgroundContext';
-import { Link } from 'react-router-dom';
 
 export const Page404 = () => {
-    const {language, textColors, subtitleColors, labelColors} = useContext(backgroundContext);
+    const {language, textColors} = useContext(backgroundContext);
     
   return (
     <section className='pagina404-section'>
